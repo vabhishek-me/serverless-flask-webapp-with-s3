@@ -7,6 +7,14 @@
   <title>{{ data.title }}</title>
 </head>
 <body>
-  {{ data.body }}
+
+  <div style="text-align: center;">
+    <h1>
+      {{ data.body }}
+    </h1>
+    <br />
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Flask Logo">
+  </div>
+
 </body>
 </html>

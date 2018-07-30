@@ -5,6 +5,6 @@ app = Flask(__name__)
 def hello():
     data = {
         "title": "Flask WebApp",
-        "body": "Flask WebApp"
+        "body": "Flask Serverless WebApp"
     }
     return render_template('index.html', data=data)
