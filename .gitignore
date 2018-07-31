@@ -24,3 +24,9 @@ htmlcov/
 
 # Zappa config
 zappa_settings.json
+
+# virtual env
+flaskenv/
+
+# python cache
+__pycache__/
