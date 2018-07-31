@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask_s3 import FlaskS3
+import requests
 
 app = Flask(__name__)
 app.config['FLASKS3_BUCKET_NAME'] = 's3-bucket-for-flask'
@@ -12,6 +13,16 @@ def home():
         "body": "Flask Serverless WebApp"
     }
     return render_template('index.html', data=data)
+
+@app.route("/chuck-norris")
+def chuckNorris():
+    req = requests.get("http://api.icndb.com/jokes/random/")
+    data = {
+        "title": "Chuck Norris Joke",
+        "api": req.json()
+    }
+    return render_template('chuck-norris.html', data=data)
+
 
 @app.errorhandler(500)
 def internal_error(error):
