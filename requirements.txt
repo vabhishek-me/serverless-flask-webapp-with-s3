@@ -3,7 +3,7 @@ Flask==1.0.2
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 argcomplete==1.9.3
 base58==1.0.0
 boto3==1.7.65
@@ -37,6 +37,6 @@ tqdm==4.19.1
 troposphere==2.3.1
 Unidecode==1.0.22
 urllib3==1.23
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wsgi-request-logger==0.4.6
 zappa==0.46.2
